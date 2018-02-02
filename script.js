@@ -22,7 +22,7 @@ function startCombat(username){
     } 
     
     var command = prompt(`Would like to “attack” or “run”?`);
-    if (command === "run"){
+    if (command.toLowerCase() === "run"){
       console.log('You have successfully ran away!');
       break;
     }

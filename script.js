@@ -13,7 +13,7 @@ function startCombat(username){
   var xHP = 10;
   var xlives = 3;
   while (HP > 0){
-    var damage = getDamage(3);
+    var damage = getDamage(5);
     HP -= damage;
     console.log(`Grant attacks and does ${damage} damage, ${username} HP is at ${HP}.`);
     if (HP <= 0){
@@ -27,7 +27,7 @@ function startCombat(username){
       break;
     }
     
-    damage = getDamage(3);
+    damage = getDamage(5);
     xHP -= damage;
     console.log(`${username} attacks Grant, it does ${damage} damage, his HP is at ${xHP}.`);
     if (xHP <= 0 && xlives === 0){
